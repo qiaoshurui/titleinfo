@@ -1,0 +1,95 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.2" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space ::98:x, par t:::p {seq {comp label3:::p::p, space :::x, comp scrollPane2:::p:155:p}, seq {comp label2:::p::p, space :p:26:p, comp userTypeNameTextField:::p:155:p}}, space :p:63:p, par t {comp submitUserButton:::p::p, comp submitDeleteButton:::p:106:p}, space :p:94:p}, seq {par l {seq l {space :p:125:p, comp label1:::p::p, space u:::p, comp searchTypeNameTextField:::p:189:p, space :p:43:p, comp searchButton:::p::p}, seq l {space :p:54:p, comp scrollPane1:::p:553:p}}, space ::53:x}}"
+			"$verticalGroup": "par l {seq l {space :p:23:p, par b {comp searchTypeNameTextField::b:p::p, comp label1::b:p:26:p, comp searchButton::b:p::p}, space :::p, comp scrollPane1:::p:252:p, par l {seq {space :p:25:p, comp submitUserButton:::p::p}, seq t {space :::p, par b {comp userTypeNameTextField::b:p::p, comp label2::b:p::p}}}, par l {seq {space s:::p, par l {comp scrollPane2:::p:81:p, comp label3:::p::p}}, seq l {space :p:54:p, comp submitDeleteButton:::p::p}}, space ::74:x}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"title": "题目类型信息管理"
+			"closable": true
+			"maximizable": true
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "typeListTable"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "题目类型编号" )
+						add( "题目类型名称" )
+						add( "题目类型信息介绍" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( false )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+					} )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "typeListTableMouseClicked", true ) )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "类型名称："
+				"font": new java.awt.Font( "微软雅黑", 0, 14 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/类型名称.png" )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "searchTypeNameTextField"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "searchButton"
+				"text": "查询"
+				"font": new java.awt.Font( "微软雅黑", 0, 14 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/随机查找.png" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "searchButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "题目类型名称："
+				"font": new java.awt.Font( "微软雅黑", 0, 14 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/类型名称.png" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "题目类型信息："
+				"font": new java.awt.Font( "微软雅黑", 0, 14 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/题目修改和删除.png" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "submitUserButton"
+				"text": "确认修改"
+				"font": new java.awt.Font( "微软雅黑", 0, 14 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/确认 .png" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "submitUserButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "submitDeleteButton"
+				"text": "删除"
+				"font": new java.awt.Font( "微软雅黑", 0, 14 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/删 除.png" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "submitDeleteButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userTypeNameTextField"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane2"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "userTypeInfoTextArea"
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 55, 0 )
+			"size": new java.awt.Dimension( 660, 550 )
+		} )
+	}
+}

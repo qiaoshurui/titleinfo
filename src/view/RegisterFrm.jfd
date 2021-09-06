@@ -1,0 +1,51 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.2" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:42:p, par l {seq {par t {comp label2:::p::p, comp label3:::p::p}, space u:::p, par l {comp RegisterTelTextField:::p:179:p, comp RegisterPasswordTextField:::::x}}, seq {comp label1:::p::p, space s:::p, comp RegisterNameTextField:::::x}}, space :p:50:p}, seq t {space :::x, comp RegisterButton:::p::p, space :p:106:p}}"
+			"$verticalGroup": "par l {seq l {space :p:30:p, par b {comp label1::b:p::p, comp RegisterNameTextField::b:p:30:p}, space :p:33:p, par b {comp label2::b:p::p, comp RegisterTelTextField::b:p:30:p}, space ::27:x, par b {comp label3::b:p::p, comp RegisterPasswordTextField::b:p:30:p}, space :p:34:p, comp RegisterButton:::p::p, space :p:45:p}}"
+		} ) {
+			name: "this"
+			"title": "注册"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "姓名："
+				"font": new java.awt.Font( "微软雅黑", 0, 14 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/用户名.png" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "手机号:"
+				"font": new java.awt.Font( "微软雅黑", 0, 14 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/题目查找.png" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "密码："
+				"font": new java.awt.Font( "微软雅黑", 0, 14 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/帮 助.png" )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "RegisterButton"
+				"text": "确定注册"
+				"font": new java.awt.Font( "微软雅黑", 0, 14 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/确认 .png" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "RegisterButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "RegisterNameTextField"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "RegisterPasswordTextField"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "RegisterTelTextField"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 180, 65 )
+			"size": new java.awt.Dimension( 345, 315 )
+		} )
+	}
+}

@@ -1,0 +1,130 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.2" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp panel1::t:::x}"
+			"$verticalGroup": "par l {comp panel1::t:::x}"
+		} ) {
+			name: "this"
+			"title": "面试题库管理系统界面"
+			"visible": true
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {comp desktop::l::973:x}"
+				"$verticalGroup": "par l {comp desktop::t::521:x}"
+			} ) {
+				name: "panel1"
+				add( new FormContainer( "javax.swing.JDesktopPane", new FormLayoutManager( class javax.swing.JDesktopPane ) ) {
+					name: "desktop"
+					"foreground": sfield java.awt.Color black
+					"background": new java.awt.Color( 102, 102, 0, 255 )
+				} )
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "系统设置"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/系统设置.png" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "修改密码"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/修改密码.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem1ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem2"
+						"text": "退出系统"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/退出系统.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu2"
+					"text": "题目查找"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/题目查找.png" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem3"
+						"text": "查找题目"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/类型查找.png" )
+						"font": new java.awt.Font( "微软雅黑", 0, 14 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem3ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem4"
+						"text": "分页查询"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/类型信息.png" )
+						"font": new java.awt.Font( "微软雅黑", 0, 14 )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem4ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem10"
+						"text": "我的题目"
+						"font": new java.awt.Font( "微软雅黑", 0, 14 )
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/用户名.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem10ActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu3"
+					"text": "题目修改和删除"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/题目修改和删除.png" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem5"
+						"text": "修改和删除题目"
+						"font": new java.awt.Font( "微软雅黑", 0, 14 )
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/题目内容.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem5ActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu4"
+					"text": "题目添加"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/题目添加.png" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem9"
+						"text": "添加题目"
+						"font": new java.awt.Font( "微软雅黑", 0, 14 )
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/类型信息.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem9ActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu5"
+					"text": "题目类型的添加和删除"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/题目类型的添加和删除.png" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem7"
+						"text": "题目类型的添加"
+						"font": new java.awt.Font( "微软雅黑", 0, 14 )
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/随机查找.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem7ActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem8"
+						"text": "题目类型管理"
+						"font": new java.awt.Font( "微软雅黑", 0, 14 )
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/类型信息.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem8ActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu6"
+					"text": "帮助"
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/帮 助.png" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem6"
+						"text": "关于我们"
+						"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/关于我们.png" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem6ActionPerformed", true ) )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 975, 575 )
+		} )
+	}
+}

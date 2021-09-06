@@ -1,0 +1,46 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.2" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space ::34:x, comp scrollPane1:::p:552:p, space :p:19:p}}"
+			"$verticalGroup": "par l {seq l {space :p:26:p, comp scrollPane1:::p:350:p, space ::19:x}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"closable": true
+			"maximizable": true
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "TitleRecordListTable"
+					"model": new com.jformdesigner.model.SwingTableModel( new java.util.Vector, new java.util.Vector {
+						add( "题目编号" )
+						add( "题目内容" )
+						add( "创建时间" )
+						add( "下次出现时间" )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					}, new java.util.Vector {
+						add( null )
+						add( null )
+						add( null )
+						add( null )
+					} )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 230, 55 )
+			"size": new java.awt.Dimension( 605, 415 )
+		} )
+	}
+}

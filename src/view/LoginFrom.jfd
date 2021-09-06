@@ -1,0 +1,70 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.2" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {comp Login::l:::x}"
+			"$verticalGroup": "par l {comp Login::l:::x}"
+		} ) {
+			name: "Login_1"
+			"title": "登录"
+			"resizable": false
+			"visible": true
+			"defaultCloseOperation": 2
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq {space :p:64:p, par t {seq {comp label1:::p:294:p, space :0:0:x}, seq {par l {comp label2::t:p:79:p, comp label3::l:p:79:p}, space :24:24:p, par t:::p {comp passwordTextField::::202:x, comp userNameTextField::::202:x}, space :p:6:p}}, space :73:73:p}, seq l {space :p:106:p, comp login:::p::p, space :p:78:p, comp registerButton:::p::p, space :0:0:x}}"
+				"$verticalGroup": "par l {seq l {space :p:33:p, comp label1:::p:61:p, space :p:32:p, par b {comp userNameTextField::b:p:28:p, comp label2::b:p:28:p}, space s:::p, par b {comp label3::b:p:28:p, comp passwordTextField::b:p:32:p}, space ::46:x, par b {comp login::b:p::p, comp registerButton::b:p::p}, space :p:48:p}}"
+			} ) {
+				name: "Login"
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "面试题库管理系统登录界面"
+					"font": new java.awt.Font( "微软雅黑", 1, 18 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/面试-1.png" )
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "用户名:"
+					"font": &Font0 new java.awt.Font( "微软雅黑", 0, 14 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/用户名.png" )
+					auxiliary() {
+						"font.forceValue": true
+					}
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "userNameTextField"
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label3"
+					"text": "密   码:"
+					"font": #Font0
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/密 码.png" )
+					auxiliary() {
+						"font.forceValue": true
+					}
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "login"
+					"text": "登录"
+					"font": new java.awt.Font( "微软雅黑", 0, 14 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/登录.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginActionPerformed", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JPasswordField" ) {
+					name: "passwordTextField"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "registerButton"
+					"text": "我要注册"
+					"font": new java.awt.Font( "微软雅黑", 0, 14 )
+					"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/注册.png" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "registerButtonActionPerformed", true ) )
+				} )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 235, 30 )
+			"size": new java.awt.Dimension( 450, 360 )
+		} )
+	}
+}

@@ -1,0 +1,64 @@
+JFDML JFormDesigner: "7.0.4.0.360" Java: "11.0.2" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JInternalFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {space :p:68:p, par l:::p {seq {comp label2:::p::p, space :::p, comp scrollPane1:::p:190:p}, seq {comp label3:::p::p, space :::p, comp TitleDiffComboBox:::::x}, seq {comp label1:::p::p, space :::p, comp TitleTypeComboBox:::p:190:p}}, space ::96:x}, seq t {space ::188:x, comp SubmitButton:::p::p, space :p:156:p}}"
+			"$verticalGroup": "par l {seq l {space :p:30:p, par b {comp label1::b:p::p, comp TitleTypeComboBox::b:p:24:p}, space :p:27:p, par l {comp label2:::p::p, comp scrollPane1:::p:105:p}, space u:::p, par b {comp TitleDiffComboBox::b:p::p, comp label3::b:p::p}, space :::x, comp SubmitButton:::p::p, space :p:68:p}}"
+		} ) {
+			name: "this"
+			"visible": true
+			"title": "添加题目"
+			"closable": true
+			"maximizable": true
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "题目类型："
+				"font": new java.awt.Font( "微软雅黑", 0, 14 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/类型名称.png" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "题目内容："
+				"font": new java.awt.Font( "微软雅黑", 0, 14 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/题目内容.png" )
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "题目难度："
+				"font": new java.awt.Font( "微软雅黑", 0, 14 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/题目难度.png" )
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "TitleInfoTextArea"
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "TitleTypeComboBox"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "SubmitButton"
+				"text": "确认添加"
+				"font": new java.awt.Font( "微软雅黑", 0, 14 )
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/images/确认 .png" )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SubmitButtonActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "TitleDiffComboBox"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "简单"
+					addElement( "简单" )
+					addElement( "中等" )
+					addElement( "困难" )
+					addElement( "困困难" )
+				}
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 230, 120 )
+			"size": new java.awt.Dimension( 450, 325 )
+		} )
+	}
+}
